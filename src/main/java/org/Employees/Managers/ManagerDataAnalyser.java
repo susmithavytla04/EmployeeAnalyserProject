@@ -16,8 +16,8 @@ import java.util.Scanner;
 import static org.Employees.Analysis.DataLoader.parseEmployees;
 
 public class ManagerDataAnalyser {
-    private static Map<Integer, Employee> employees = new HashMap<>();
-    private static Map<Integer, List<Employee>> managerToSubordinates = new HashMap<>();
+    public static Map<Integer, Employee> employees = new HashMap<>();
+    public static Map<Integer, List<Employee>> managerToSubordinates = new HashMap<>();
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the path of the CSV file: ");
